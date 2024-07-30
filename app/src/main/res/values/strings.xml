@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">AppFragmento</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="array_ageRange">
+        <item>Niño</item>
+        <item>Joven</item>
+        <item>Adulto</item>
+        <item>Viejo</item>
+    </string-array>
+</resources>

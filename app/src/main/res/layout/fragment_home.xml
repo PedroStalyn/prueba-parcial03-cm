@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/label_mainTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="0dp"
+        android:text="ELEMENTOS EN ANDROID"
+        android:textSize="19sp" />
+
+    <EditText
+        android:drawableStart="@drawable/input_person"
+        android:drawablePadding="15dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese el nombre"/>
+    <TextView
+        android:id="@+id/label_sexo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:paddingBottom="0dp"
+        android:text="Selecione el sexo:"
+        android:textSize="18sp" />
+    <RadioGroup
+        android:id="@+id/radioGroup_sexUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RadioButton
+            android:id="@+id/rdHombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:padding="0dp"
+            android:text="Hombre"/>
+        <RadioButton
+            android:id="@+id/rdMujer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:padding="0dp"
+            android:text="Mujer" />
+    </RadioGroup>
+    <TextView
+        android:id="@+id/label_transport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selecione el medio de Transporte:"
+        android:paddingLeft="20dp"
+        android:textSize="18sp" />
+    <CheckBox android:id="@+id/checkbox_car"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Carro"
+        android:layout_marginLeft="35dp" />
+    <CheckBox android:id="@+id/checkbox_motorcycle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Moto"
+        android:layout_marginLeft="35dp"/>
+    <CheckBox android:id="@+id/checkbox_tricycle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Triciclo"
+        android:layout_marginLeft="35dp" />
+    <TextView
+        android:id="@+id/label_ageRange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:paddingBottom="0dp"
+        android:text="Rango de Edad:"
+        android:textSize="18sp" />
+    <Spinner
+        android:id="@+id/spinner_ageRange"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/array_ageRange"
+        />
+
+    <Button android:id="@+id/button_submit"
+        android:layout_margin="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingresar" />
+
+    <TextView
+        android:id="@+id/label_showInformation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="0dp"
+        android:text="."
+        android:textSize="17sp" />
+</LinearLayout>
